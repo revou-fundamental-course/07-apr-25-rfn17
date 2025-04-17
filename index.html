@@ -1,0 +1,126 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="brand">
+                <img src="assets/image/logo.jpg" alt="" width="50px">
+                <span>Reef Company</span>
+            </div>
+            <ul id="navbar-menu">
+                <li><a class="nav-item" href="#home-section">Home</a></li>
+                <li><a class="nav-item" href="#headquarter-section">About Us</a></li>
+                <li><a class="nav-item" href="#message-section">Message Us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <div class="container-home">
+            <section id="home-section" class="hero">
+                <div class="hero-content">
+                    <h2 id="welcome-message">Hi, Welcome to Our Website</h2>
+                    <hr><br>
+                    <h2>We are,</h2>
+                    <h1>Reef Company</h1><br>
+                    <p>
+                        We are a company engaged in marine technology,<br>
+                        a branch of engineering that utilizes technology 
+                        to manage and protect marine resources. <br>
+                        The following are the areas we manage is 
+                        Java Sea, Arafura Sea, and Banda Sea.
+                    </p>
+                </div>
+                <div class="banner-slideshow">
+                    <div class="banner-slide fade">
+                        <img src="./assets/image/carousel1.png" alt="Banner 1">
+                    </div>
+                    <div class="banner-slide fade">
+                        <img src="./assets/image/carousel2.png" alt="Banner 2">
+                    </div>
+                    <div class="banner-slide fade">
+                        <img src="./assets/image/carousel3.png" alt="Banner 3">
+                    </div>
+                </div>
+            </section>
+
+            <section id="headquarter-section" class="headquarter">
+                <h1>Temukan Kami</h1>
+                <div class="headquarter-content">
+                    <div class="card">
+                        <img src="assets/image/jawa-sukabumi.webp" alt="">
+                        <div class="overlay"></div>
+                        <span>Sukabumi</span>
+                    </div>
+                    <div class="card">
+                        <img src="assets/image/jawa-sukamara.webp" alt="">
+                        <div class="overlay"></div>
+                        <span>Sukamara</span>
+                    </div>
+                    <div class="card">
+                        <img src="assets/image/banda-neira.jfif" alt="">
+                        <div class="overlay"></div>
+                        <span>Banda Neira</span>
+                    </div>
+                    <div class="card">
+                        <img src="assets/image/arafura papua.png" alt="">
+                        <div class="overlay"></div>
+                        <span>Papua</span>
+                    </div>
+                </div>
+            </section>
+
+            <section id="message-section" class="message-us">
+                    <h2>Contact Me</h2>
+    
+                <article class="section-content contact-container">
+                    <form id="contact-form" class="contact-form">
+                        <label>
+                            Nama :
+                            <input type="text" id="name" placeholder="Nama" required />
+                        </label>
+    
+                        <label>
+                            Tanggal Lahir :
+                            <input type="date" id="dob" required />
+                        </label>
+    
+                        <label>
+                            Jenis Kelamin :
+                            <div class="gender-options">
+                                <label><input type="radio" name="gender" value="Laki-Laki" required /> Laki-Laki</label>
+                                <label><input type="radio" name="gender" value="Perempuan" /> Perempuan</label>
+                            </div>
+                        </label>
+    
+                        <label>
+                            Pesan :
+                            <textarea id="message" placeholder="Pesan" required></textarea>
+                        </label>
+    
+                        <button type="submit">Submit</button>
+                    </form>
+    
+                    <div id="contact-result" class="contact-result">
+                        <p><strong>Current time</strong> : <span id="current-time"></span></p>
+                        <p><strong>Nama</strong> : <span id="result-name">-</span></p>
+                        <p><strong>Tanggal Lahir</strong> : <span id="result-dob">-</span></p>
+                        <p><strong>Jenis Kelamin</strong> : <span id="result-gender">-</span></p>
+                        <p><strong>Pesan</strong> : <span id="result-message">-</span></p>
+                    </div>
+                </article>
+            </section>
+        </div>
+    </main>
+    <footer>
+        <p>&copy; 2025 Rifky Fitra Nugraha. All rights reserved.</p> 
+    </footer>
+    <script src="js/script.js"></script>
+</body>
+</html>
